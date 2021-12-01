@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+:root {
+  --body-color: #fafafa;
+  --card-background: #ffffff;
+  --button-red-color: #ff4e4e;
+  --heading-color: #0000;
+  --menu-font-color: #7d7d7d;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: var(--body-color);
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding: 2em;
+  display: flex;
+}
+.main-container {
+  padding: 2em;
+  padding-top: 50px;
+  position: relative;
+  top: 40px;
+  overflow-x: hidden;
+  padding-left: 4em;
+}
+.head-row {
+  display: flex;
+}
+.main-text {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+  color: black;
+  width: 60%;
+  /* white-space: pre-wrap; */
+}
+.additional-info {
+  width: 19%;
+  padding-left: 3em;
+}
+.additional-info > p {
+  font-size: 17px;
+  color: grey;
+  text-align: left;
+  margin-bottom: 2em;
+  padding-right: 18px;
+  line-height: 24px;
+}
+hr.border {
+  width: 70px;
+  margin-left: 0;
+  border: none;
+  padding: 1px;
+  background: var(--button-red-color);
+}
+.menu-container {
+  width: 30%;
+  position: relative;
+  left: 30px;
+  top: 15px;
+}
+.top-menu {
+  font-size: 40px;
+  font-family: href=
+    "https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel=
+    "stylesheet";
+  width: 50%;
+}
+.slider-container {
+  display: flex;
+  padding-top: 50px;
+  /* width: 200%; */
+  /* justify-content: space-between; */
+  overflow-x: scroll;
+  padding-bottom: 40px;
+}
+.slide-wrapper {
+  display: flex;
+}
+/* .slider-container::-webkit-scrollbar {
+  opacity: 0.1;
+} */
+.slider {
+  /* width: 18%; */
+  width: 170px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 16px 126px -75px rgba(5, 5, 5, 1);
+  -moz-box-shadow: 0px 16px 126px -75px rgba(5, 5, 5, 1);
+  box-shadow: 0px 16px 126px -75px rgba(5, 5, 5, 1);
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+  padding: 0 1em;
+  margin: 10px;
+}
+.cen {
+  display: block;
+  margin: 25px auto;
+  object-fit: contain;
+  width: 100%;
+}
+.side-m {
+  width: 100%;
+  font-size: 17px;
+  color: gray;
+  padding: 20px 0;
+}
+.logo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  width: 50%;
+}
+.box {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.button-cart {
+  background-color: #ff4e4e;
+  padding: 14px 44px;
+  border: none;
+  border-radius: 3em;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.slide-in-bck-left {
+  animation: slide-in-bck-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    forwards;
+}
+
+@keyframes slide-in-bck-left {
+  0% {
+    -webkit-transform: translateZ(700px) translateX(-400px);
+    transform: translateZ(700px) translateX(-400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  padding: 1.7em;
+}
+.ham {
+  height: 20px;
+  width: 20px;
+}
+.cart {
+  height: 20px;
+  width: 20px;
+}
+i img {
+  width: 100%;
+  height: 100%;
+}
+.menu-title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+}
+/* img{
+  object-fit: contain;
+} */
+/* responsive queries*/
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+.slide-wrapper {
+  display: flex;
+}
+.slider-inner-wrapper {
+  display: flex;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+  .menu-container {
+    display: ;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+  .main-text {
+    width: auto;
+    font-size: 30px;
+  }
+  .main-container {
+    padding: 0;
+  }
+  main {
+    padding: 0 2em;
+  }
+  .slider {
+    width: 100px;
+  }
+  .slider-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
